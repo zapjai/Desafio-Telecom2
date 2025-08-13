@@ -1,4 +1,4 @@
-# Challenge Telecom X - Parte 2: Previsão de Churn com Machine Learning
+# Challenge Telecom X - Parte 2: Previsão de evasão de clientes com Machine Learning
 
 ## 1. Propósito da Análise
 
