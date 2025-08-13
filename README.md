@@ -42,7 +42,7 @@ Foram escolhidos dois modelos de classificação com características distintas 
     - **Justificativa:** É um modelo de *ensemble* mais robusto, capaz de capturar relações complexas e não-lineares nos dados. Geralmente apresenta alta performance e fornece uma métrica direta da importância de cada variável.
     - **Necessidade de Normalização:** Não, mas os dados normalizados foram utilizados para simplificar o pipeline.
 
-## 3. Instruções para Execução
+## 5. Instruções para Execução
 
 Para executar este projeto, siga os passos abaixo:
 
