@@ -2,19 +2,24 @@
 
 ## 1. Propósito da Análise
 
-Este projeto é a segunda fase do Challenge Telecom X, uma iniciativa do programa Oracle Next Education em parceria com a Alura. O objetivo principal desta análise foi desenvolver um pipeline de Machine Learning para **prever a evasão (churn) de clientes**. A partir de um conjunto de dados contendo características demográficas, de contrato e de serviços, construímos modelos preditivos capazes de identificar quais clientes têm maior chance de cancelar seus serviços, permitindo que a empresa tome ações de retenção proativas.
+Este projeto faz parte da segunda fase do Challenge Telecom X, uma iniciativa realizada pelo programa Oracle Next Education em parceria com a Alura. O grande objetivo desta etapa foi desenvolver um processo automatizado, chamado pipeline de Machine Learning, para ajudar a empresa a prever quais clientes têm mais chance de cancelar seus serviços (o chamado “churn”).
+
+Para isso, utilizamos uma base de dados que contém várias informações importantes sobre os clientes, como dados pessoais, detalhes dos contratos e dos serviços utilizados. A partir desse material, treinamos modelos de previsão (modelos preditivos) capazes de identificar os clientes que correm maior risco de sair da empresa.
+
+Com essas previsões em mãos, a empresa consegue agir antes que o cancelamento aconteça, adotando estratégias para manter os clientes e, assim, diminuir a perda de contratos.
 
 ## 2. Estrutura do Projeto
 
 O repositório está organizado da seguinte forma:
 
 ```
-├── challenge_telecom_x_churn_part2.ipynb
+├── Telecom2.ipynb
 ├── README.md
+├── Dlimp.csv
 ```
 
-- **`challenge_telecom_x_churn_part2.ipynb`**: O notebook principal contendo todo o código e a análise da Parte 2, desde o carregamento dos dados até a conclusão estratégica.
-- **`README.md`**: Este arquivo, com a documentação do projeto.
+- **Telecom2.ipynb`**: O notebook principal contendo todo o código e a análise da Parte 2, desde o carregamento dos dados até a conclusão estratégica.
+- **README.md`**: Este arquivo, com a documentação do projeto.
 
 ## 3. Processo de Preparação dos Dados
 
@@ -37,29 +42,7 @@ Foram escolhidos dois modelos de classificação com características distintas 
     - **Justificativa:** É um modelo de *ensemble* mais robusto, capaz de capturar relações complexas e não-lineares nos dados. Geralmente apresenta alta performance e fornece uma métrica direta da importância de cada variável.
     - **Necessidade de Normalização:** Não, mas os dados normalizados foram utilizados para simplificar o pipeline.
 
-## 5. Gráficos e Insights da Análise (EDA)
-
-A análise exploratória revelou fortes indicadores de churn. Os gráficos abaixo ilustram duas das principais descobertas:
-
-**Tempo de Contrato vs. Evasão**
-
-O boxplot mostra que clientes que evadiram (`Churn = 1`) tinham, em média, um tempo de contrato significativamente menor do que os que permaneceram.
-
-
-<img width="844" height="629" alt="image" src="https://github.com/user-attachments/assets/cdd2e3d5-59c1-4934-9054-69dfcbeb3c06" />
-
-
-**Análise de Correlação**
-
-O ranking de correlação com a variável `Churn` destacou os principais fatores de risco (correlação positiva) e de proteção (correlação negativa).
-
-
-<img width="1793" height="1558" alt="image" src="https://github.com/user-attachments/assets/67566d68-dbcc-40bd-bbba-997e9ab39164" />
-
-
-- **Principais Insights:** Contratos mensais, baixo tempo de contrato e serviço de fibra ótica estão fortemente associados a um maior risco de churn. Por outro lado, contratos de longo prazo (1 ou 2 anos) são os principais fatores de retenção.
-
-## 6. Instruções para Execução
+## 3. Instruções para Execução
 
 Para executar este projeto, siga os passos abaixo:
 
@@ -71,5 +54,5 @@ pip install pandas numpy matplotlib seaborn scikit-learn
 
 **Executando o Notebook:**
 1. Clone este repositório do GitHub.
-2. Abra o arquivo `challenge_telecom_x_churn_part2.ipynb` em um ambiente como Jupyter Notebook ou Google Colab.
-3. O notebook está configurado para carregar o arquivo `dados_tratados.csv` diretamente da URL "Raw" do GitHub, então não é necessário fazer o upload manual dos dados. Apenas execute as células em sequência.
+2. Abra o arquivo `Telecom2.ipynb` em um ambiente como Jupyter Notebook ou Google Colab.
+3. O notebook está configurado para carregar o arquivo `Dlimp.csv` diretamente da URL "Raw" do GitHub, então não é necessário fazer o upload manual dos dados. Apenas execute as células em sequência.
